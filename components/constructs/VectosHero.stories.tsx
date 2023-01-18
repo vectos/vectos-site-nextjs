@@ -1,17 +1,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Page } from './Page';
-import { Hero } from './Hero';
+import { VectosHero } from './VectosHero';
 
 export default {
-  title: 'Constructs/Page',
-  component: Page,
+  title: 'Constructs/Hero',
+  component: VectosHero,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Page>;
+} as ComponentMeta<typeof VectosHero>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page title='Home'><Hero /></Page>;
+const Template: ComponentStory<typeof VectosHero> = (args) => <VectosHero />;
 
 export const Standard = Template.bind({});

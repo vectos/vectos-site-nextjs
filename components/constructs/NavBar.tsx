@@ -49,7 +49,7 @@ export const NavBar = () => {
       wrap="wrap"
       w="100%"
       mb={0}
-      pt={8}
+      pt={2}
       pl={8}
       pr={8}
       boxShadow="0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06)"
