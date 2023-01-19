@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof VectosShowcaseCard> = (args) => <VectosSho
 export const Standard = Template.bind({});
 Standard.args = {
   title: "Using oracles to test the service and data layer",
-  text: "Getting rid of mocks in your service layer tests and test your database for real",
+  intro: "Getting rid of mocks in your service layer tests and test your database for real",
   href: "#",
-  image: "/img/blog/test-oracle.png"
+  banner: "/img/blog/test-oracle.png"
 };

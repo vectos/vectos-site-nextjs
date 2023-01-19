@@ -27,7 +27,7 @@ export const VectosHero = () => {
             <Highlight query={["user friendly", "robust", "performant"]} styles={{px: 2, py: 1, rounded: "full", bg: 'purple.100'}}>Vectos creates websites & apps which are user friendly, robust and performant. Vectos is located in Utrecht in the Netherlands.</Highlight>
           </Text>
           <Stack mt={10} direction="row">
-            <PrimaryButton size="lg" label="Contact me" icon={<EmailIcon/>}/>
+            <PrimaryButton href="mailto:mark@vectos.net" size="lg" label="Contact me" icon={<EmailIcon/>}/>
             <SecondaryButton size="lg" label="About"/>
           </Stack>
         </Box>
