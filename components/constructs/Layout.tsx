@@ -10,13 +10,12 @@ export const Layout = (props: Props) => {
 
   return (
     <Box>
-      <NavBar/>
-      <Box bgImage="/bg.svg" bgRepeat="no-repeat" p={10}>
+      <NavBar />
+      <Box bgImage="/img/bg.svg" bgRepeat="no-repeat" p={10}>
         <Center>
           <Box w={1024}>
-          {props.children}
+            {props.children}
           </Box>
-          
         </Center>
       </Box>
     </Box>

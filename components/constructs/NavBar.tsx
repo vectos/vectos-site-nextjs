@@ -25,7 +25,7 @@ interface MenuItemProps {
 
 const MenuItem = (props: MenuItemProps) => {
   return (
-    <Box p={3} borderBottomWidth={props.isActive ? "2px" : "0px"} borderBottomColor="purple">
+    <Box p={{base: 0, md: 3}} borderBottomWidth={{base: 0, md: props.isActive ? "2px" : "0px"}} borderBottomColor="purple">
       <Link href={props.href}>
         {props.label}
       </Link>
@@ -34,7 +34,7 @@ const MenuItem = (props: MenuItemProps) => {
 }
 
 const Logo = () => {
-  return (<Box mt={2} mb={2}><Image src="/logo.png" width={104} height={32} alt="Vectos" /></Box>)
+  return (<Box mt={2} mb={2}><Image src="/img/logo.png" width={104} height={32} alt="Vectos" /></Box>)
 }
 
 export const NavBar = () => {
@@ -58,14 +58,14 @@ export const NavBar = () => {
       <MenuToggle isOpen={isOpen} toggle={toggle} />
       <Box display={{ base: isOpen ? "block" : "none", md: "block" }} flexBasis={{ base: "100%", md: "auto" }}>
         <Stack
-        spacing={8}
+        spacing={{base: 2, md: 8}}
         align="center"
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
         >
-          <MenuItem href="/" label="Home" isActive={true} />
-          <MenuItem href="/about" label="About" isActive={false} />
+          <MenuItem href="#" label="Home" isActive={true} />
+          <MenuItem href="#" label="About" isActive={false} />
         </Stack>
       </Box>
       

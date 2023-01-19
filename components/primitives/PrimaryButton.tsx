@@ -7,5 +7,5 @@ interface Props {
 }
 
 export const PrimaryButton = (props: Props) => {
-    return (<Button leftIcon={props.icon} colorScheme='purple' variant='solid' size={props.size}>{props.label}</Button>)
+    return (<Button as="a" leftIcon={props.icon} colorScheme='purple' variant='solid' size={props.size}>{props.label}</Button>)
 }
