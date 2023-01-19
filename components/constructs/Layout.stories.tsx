@@ -4,7 +4,6 @@ import { Layout } from './Layout';
 import { VectosHero } from './VectosHero';
 import { VectosShowcaseCard } from '../primitives/VectosShowcaseCard';
 import { Box, SimpleGrid, Stack } from '@chakra-ui/react';
-import { VectosCardSelection } from './VectosCardSelection';
 import { VectosSelection } from '../primitives/VectosSelection';
 import { VectosSummaryCard } from '../primitives/VectosSummaryCard';
 
