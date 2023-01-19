@@ -46,7 +46,7 @@ export default function Home(props: Props) {
         </VectosSelection>
         <VectosSelection title="Tech blog" subTitle="The latest tech blog articles">
           <SimpleGrid columns={3} spacing={1}>
-            {props.posts?.map(item => <VectosShowcaseCard {...item} href={`/posts/${item.slug}`} />)}
+            {props.posts?.map(item => <VectosShowcaseCard key={item.slug} {...item} href={`/posts/${item.slug}`} />)}
           </SimpleGrid>
         </VectosSelection>
       </Box>
